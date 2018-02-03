@@ -116,7 +116,7 @@ class TestBasicConsumer(TestCase):
         # stop the consumer
         consumer.join()
 
-    def test_that_consume_on_invalid_message_does_moves_messate_to_dead_letter_queue(self):
+    def test_that_consume_on_invalid_message_does_moves_message_to_dead_letter_queue(self):
         # publish a message
         self.channel.basic_publish(
             exchange='',
